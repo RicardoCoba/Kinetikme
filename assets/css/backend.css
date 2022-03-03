@@ -21,7 +21,7 @@ root {
    -------------------------------------------------------------------- */
 
 #header {
-    background-color: #429a82;
+    background-color: #cab44b;
     box-shadow: none;
     border-radius: 0;
     padding: 0;
@@ -66,11 +66,11 @@ root {
 }
 
 #header #header-menu .nav-item:hover {
-    background: #3a8873;
+    background: #ebe085;
 }
 
 #header #header-menu .nav-item.active {
-    background: #2e6a5b;
+    background: #ebe085;
 }
 
 #footer {
@@ -148,7 +148,7 @@ body .modal .modal-title {
 
 body .modal-header {
     padding: 20px 15px;
-    background: #429a82;
+    background: #cab44b;
 }
 
 body .modal-header h3 {
@@ -255,7 +255,7 @@ body legend {
 
 .backend-page .filter-records .results .entry.selected {
     background-color: #F4F4F4;
-    border-right: 5px solid #429a82;
+    border-right: 5px solid #cab44b;
 }
 
 .backend-page .filter-records .results hr {
@@ -425,8 +425,8 @@ body legend {
 }
 
 #calendar .fc-event {
-    border: 1px solid #4790CA;
-    background-color: #4790CA;
+    border: 1px solid #cab44b;
+    background-color: #cab44b;
     min-height: 12px; 
 }
 
@@ -447,7 +447,7 @@ body legend {
 }
 
 #existing-customers-list div:hover {
-    background: #429a82;
+    background: #cab44b;
     font-weight: bold;
     color: #FFF;
     cursor: pointer;
@@ -547,7 +547,7 @@ body .form-horizontal .controls {
 }
 
 #calendar .calendar-view .date-column .provider-column .event.appointment {
-    background: #4790CA;
+    background: #cab44b;
     color: #fff;
 }
 
@@ -660,6 +660,7 @@ body .form-horizontal .controls {
 }
 
 #services-page .record-details h3 a {
+    color: #cab44b;
     font-size: 24px;
     margin-left: 10px;
 }
@@ -765,10 +766,12 @@ body .form-horizontal .controls {
 #users-page #providers .record-details h3 a {
     font-size: 24px;
     margin-left: 10px;
+    color: #cab44b;
 }
 
 #users-page #providers .record-details #provider-services .checkbox a {
     margin-left: 5px;
+    color: #cab44b;
 }
 
 /* BACKEND SETTINGS PAGE
@@ -877,4 +880,24 @@ body .form-horizontal .controls {
 
 #settings-page #update-ea {
     margin-left: 12px;
+}
+
+.btn-primary{
+    background-color: #cab44b !important;
+    border-color: #cab44b !important;
+}
+
+.nav-link{
+background-color: #cab44b !important;
+}
+
+.nav-link :hover{
+    color: white;
+}
+
+a{
+    color: white;
+}
+a :hover{
+    color: black;
 }

@@ -29,3 +29,8 @@ body {
         margin-bottom: 20px;
     }
 }
+
+.btn-primary{
+    background-color: #cab44b !important;
+    border-color: #cab44b !important;
+}

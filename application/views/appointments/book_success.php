@@ -37,10 +37,6 @@
                     </strong>
                 </p>
 
-                <a href="<?= site_url() ?>" class="btn btn-success btn-large">
-                    <i class="fas fa-calendar-alt"></i>
-                    <?= lang('go_to_booking_page') ?>
-                </a>
 
                 <?php if (config('google_sync_feature')): ?>
                     <button id="add-to-google-calendar" class="btn btn-primary">
@@ -61,10 +57,6 @@
             </div>
 
             <div class="mt-2">
-                <small>
-                    Powered by
-                    <a href="https://easyappointments.org">Easy!Appointments</a>
-                </small>
             </div>
         </div>
     </div>

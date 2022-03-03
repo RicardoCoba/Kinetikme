@@ -53,9 +53,6 @@
                 <a class="nav-link" href="#current-user" data-toggle="tab"><?= lang('current_user') ?></a>
             </li>
         <?php endif ?>
-        <li class="nav-item">
-            <a class="nav-link" href="#about-app" data-toggle="tab"><?= lang('about_app') ?></a>
-        </li>
     </ul>
 
     <div class="tab-content">
@@ -78,7 +75,7 @@
                     </legend>
 
                     <div class="wrapper row">
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-12">
                             <div class="form-group">
                                 <label for="company-name"><?= lang('company_name') ?> *</label>
                                 <input id="company-name" data-field="company_name" class="required form-control">
@@ -145,69 +142,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="form-group">
-                                <label for="google-analytics-code">
-                                    Google Analytics ID</label>
-                                <input id="google-analytics-code" placeholder="UA-XXXXXXXX-XX or G-XXXXXXXXXX"
-                                       data-field="google_analytics_code" class="form-control">
-                                <span class="help-block">
-                                    <?= lang('google_analytics_code_hint') ?>
-                                </span>
-                            </div>
-                            <div class="form-group">
-                                <label for="api-token">API Token</label>
-                                <input id="api-token" data-field="api_token" class="form-control">
-                                <span class="help-block">
-                                    <?= lang('api_token_hint') ?>
-                                </span>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customer-notifications">
-                                    <label class="custom-control-label" for="customer-notifications">
-                                        <?= lang('customer_notifications') ?>
-                                    </label>
-                                </div>
-                                <span class="form-text text-muted">
-                                    <?= lang('customer_notifications_hint') ?>
-                                </span>
-                            </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="require-captcha">
-                                    <label class="custom-control-label" for="require-captcha">
-                                        CAPTCHA
-                                    </label>
-                                </div>
-                                <span class="form-text text-muted">
-                                    <?= lang('require_captcha_hint') ?>
-                                </span>
-                            </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="require-phone-number">
-                                    <label class="custom-control-label" for="require-phone-number">
-                                        <?= lang('phone_number') ?>
-                                    </label>
-                                </div>
-                                <span class="help-block">
-                                    <?= lang('require_phone_number_hint') ?>
-                                </span>
-                            </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="display-any-provider">
-                                    <label class="custom-control-label" for="display-any-provider">
-                                        <?= lang('any_provider') ?>
-                                    </label>
-                                </div>
-                                <span class="help-block">
-                                    <?= lang('display_any_provider_hint') ?>
-                                </span>
-                            </div>
-                        </div>
+                        
                     </div>
                 </fieldset>
             </form>
@@ -494,58 +429,4 @@
                 </div>
             </form>
         </div>
-
-        <!-- ABOUT TAB -->
-
-        <div class="tab-pane" id="about-app">
-            <h3>Easy!Appointments</h3>
-
-            <p>
-                <?= lang('about_app_info') ?>
-            </p>
-
-            <div class="current-version card card-body bg-light border-light mb-3">
-                <?= lang('current_version') ?>
-                <?= config('version') ?>
-                <?php if (config('release_label')): ?>
-                    - <?= config('release_label') ?>
-                <?php endif ?>
-            </div>
-
-            <h3><?= lang('support') ?></h3>
-            <p>
-                <?= lang('about_app_support') ?>
-
-                <br><br>
-
-                <a href="https://easyappointments.org">
-                    <?= lang('official_website') ?>
-                </a>
-                |
-                <a href="https://groups.google.com/forum/#!forum/easy-appointments">
-                    <?= lang('support_group') ?>
-                </a>
-                |
-                <a href="https://github.com/alextselegidis/easyappointments/issues">
-                    <?= lang('project_issues') ?>
-                </a>
-                |
-                <a href="https://facebook.com/easyappts">
-                    Facebook
-                </a>
-                |
-                <a href="https://twitter.com/easyappts">
-                    Twitter
-                </a>
-            </p>
-
-            <h3><?= lang('license') ?></h3>
-
-            <p>
-                <?= lang('about_app_license') ?>
-                <a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>
-            </p>
-        </div>
-
-    </div>
 </div>

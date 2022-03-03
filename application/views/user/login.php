@@ -51,12 +51,14 @@
                    placeholder="<?= lang('enter_username_here') ?>"
                    class="form-control"/>
         </div>
+        <br>
         <div class="form-group">
             <label for="password"><?= lang('password') ?></label>
             <input type="password" id="password"
                    placeholder="<?= lang('enter_password_here') ?>"
                    class="form-control"/>
         </div>
+        <br>
 
         <div class="form-group">
             <button type="submit" id="login" class="btn btn-primary">
@@ -64,19 +66,14 @@
                 <?= lang('login') ?>
             </button>
         </div>
+        <br>
 
         <a href="<?= site_url('user/forgot_password') ?>" class="forgot-password">
             <?= lang('forgot_your_password') ?></a>
-        |
-        <span id="select-language" class="badge badge-success">
-              <?= ucfirst(config('language')) ?>
-            </span>
+        
 
         <div class="mt-4">
-            <small>
-                Powered by
-                <a href="https://easyappointments.org">Easy!Appointments</a>
-            </small>
+
         </div>
     </form>
 </div>
